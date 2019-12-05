@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" fillWidth="false" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ItemAdderFxMLController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Enter the items you want to add!" textAlignment="CENTER">
+         <font>
+            <Font name="CMU Serif Bold Extended Roman" size="23.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="265.0" text="Enter below then press 'Add':">
+         <font>
+            <Font name="CMU Serif Bold Extended Roman" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="itemTextField" alignment="CENTER" prefHeight="82.0" prefWidth="274.0" promptText="Item name here...">
+         <font>
+            <Font name="CMU Serif Roman Bold Nonextended" size="13.0" />
+         </font>
+      </TextField>
+      <HBox alignment="CENTER" prefHeight="61.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#itemButtonAdd" prefHeight="30.0" prefWidth="72.0" text="Add">
+               <font>
+                  <Font name="CMU Serif Bold Extended Roman" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goBack" prefHeight="30.0" prefWidth="82.0" text="Go Back">
+               <font>
+                  <Font name="CMU Serif Bold Extended Roman" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" text="Status:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+</VBox>

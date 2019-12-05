@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane fx:id="splitPane" dividerPositions="0.5703517587939698" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ItemRemoverFxMLController">
+   <items>
+      <VBox fx:id="topVertical" alignment="CENTER" />
+      <VBox fx:id="bottomVertical" alignment="CENTER" prefHeight="186.0" prefWidth="598.0" spacing="15.0">
+         <children>
+            <Label text="Enter Item no. of the Item you want to remove:">
+               <font>
+                  <Font name="CMU Serif Bold Extended Roman" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="itemNoTextField" maxWidth="200.0" promptText="Item no.">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="598.0" spacing="50.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#removeFromTable" prefHeight="37.0" prefWidth="80.0" text="Remove" textAlignment="CENTER">
+                     <font>
+                        <Font name="CMU Sans Serif Bold Extended" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="80.0" text="Go back" textAlignment="CENTER">
+                     <font>
+                        <Font name="CMU Sans Serif Bold Extended" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="labelStatus" text="Status: ...">
+               <font>
+                  <Font name="CMU Serif Bold Extended Roman" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </items>
+</SplitPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.OptionsFxMLController">
+   <top>
+      <Label text="Welcome to your personal ToDoList!" textAlignment="CENTER" textFill="#230768" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="CMU Serif Bold Extended Italic" size="14.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="315.0" prefWidth="591.0" spacing="80.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="383.0" prefWidth="160.0" spacing="20.0">
+                     <children>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#addItemButtonPressed" prefHeight="45.0" prefWidth="130.0" text="Item Adder" textAlignment="CENTER" textFill="#112c5e">
+                           <effect>
+                              <Glow level="0.15" />
+                           </effect>
+                           <font>
+                              <Font name="CMU Serif Roman Slanted" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#itemListButtonPressed" prefHeight="39.0" prefWidth="153.0" text="Item List" textAlignment="CENTER" textFill="#112c5e">
+                           <effect>
+                              <Glow level="0.15" />
+                           </effect>
+                           <font>
+                              <Font name="CMU Serif Roman Slanted" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#saveAll" prefHeight="39.0" prefWidth="123.0" text="Save File" textAlignment="CENTER" textFill="#112c5e">
+                           <effect>
+                              <Glow level="0.15" />
+                           </effect>
+                           <font>
+                              <Font name="CMU Serif Roman Slanted" size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="383.0" prefWidth="161.0" spacing="20.0">
+                     <children>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#itemRemoverButtonPressed" prefHeight="39.0" prefWidth="136.0" text="Item Remover" textAlignment="CENTER" textFill="#112c5e">
+                           <effect>
+                              <Glow level="0.15" />
+                           </effect>
+                           <font>
+                              <Font name="CMU Serif Roman Slanted" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#showCrossedOffList" prefHeight="39.0" prefWidth="156.0" text="Crossed Off List" textAlignment="CENTER" textFill="#112c5e">
+                           <effect>
+                              <Glow level="0.15" />
+                           </effect>
+                           <font>
+                              <Font name="CMU Serif Roman Slanted" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#logout" prefHeight="39.0" prefWidth="123.0" text="Logout" textAlignment="CENTER" textFill="#112c5e">
+                           <effect>
+                              <Glow level="0.15" />
+                           </effect>
+                           <font>
+                              <Font name="CMU Serif Roman Slanted" size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button fx:id="musicToggle" mnemonicParsing="false" onAction="#musicButtonPressed" prefHeight="28.0" prefWidth="91.0" text="Music Off" textFill="#d71515">
+               <font>
+                  <Font name="CMU Serif Bold Extended Italic" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

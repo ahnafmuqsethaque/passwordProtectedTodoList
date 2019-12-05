@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane fx:id="splitPane" dividerPositions="0.8668341708542714" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ShowItemListController">
+   <items>
+      <VBox fx:id="topVerticalBox" prefHeight="200.0" prefWidth="100.0" />
+      <VBox fx:id="bottomVerticalBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goBack" text="Go Back" textAlignment="CENTER">
+               <font>
+                  <Font name="CMU Serif Roman Bold Nonextended" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </items>
+</SplitPane>
